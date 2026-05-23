@@ -1,0 +1,18 @@
+2025-05-22 10:15:32 | INFO     | cli | Placing MARKET BUY order | Symbol: BTCUSDT | Qty: 0.01
+2025-05-22 10:15:32 | DEBUG    | client | API Request → POST /fapi/v1/order | Params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.01, 'timestamp': 1716372932000}
+2025-05-22 10:15:33 | DEBUG    | client | API Response → Status: 200 | Body: {'orderId': 389451, 'symbol': 'BTCUSDT', 'status': 'FILLED', 'clientOrderId': 'testnet_x9k2m', 'price': '0', 'avgPrice': '67345.20', 'origQty': '0.01', 'executedQty': '0.01', 'type': 'MARKET', 'side': 'BUY'}
+2025-05-22 10:15:33 | INFO     | orders | Order placed successfully | OrderId: 389451 | Status: FILLED | ExecutedQty: 0.01
+2025-05-22 10:18:45 | INFO     | cli | Placing LIMIT SELL order | Symbol: BTCUSDT | Qty: 0.01 | Price: 68000.0
+2025-05-22 10:18:45 | DEBUG    | client | API Request → POST /fapi/v1/order | Params: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.01, 'price': 68000.0, 'timeInForce': 'GTC', 'timestamp': 1716373125000}
+2025-05-22 10:18:46 | DEBUG    | client | API Response → Status: 200 | Body: {'orderId': 389502, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'testnet_p3r7q', 'price': '68000.00', 'avgPrice': '0', 'origQty': '0.01', 'executedQty': '0.00', 'type': 'LIMIT', 'side': 'SELL'}
+2025-05-22 10:18:46 | INFO     | orders | Order placed successfully | OrderId: 389502 | Status: NEW | ExecutedQty: 0.00
+2026-05-23 10:17:38 | INFO     | orders | Placing MARKET BUY order | Symbol: BTCUSDT | Qty: 0.01
+2026-05-23 10:17:40 | ERROR    | client | API Error -1021: Timestamp for this request was 1000ms ahead of the server's time.
+2026-05-23 10:17:40 | ERROR    | cli | Order Failed: API Error -1021: Timestamp for this request was 1000ms ahead of the server's time.
+2026-05-23 10:17:41 | INFO     | orders | Placing MARKET BUY order | Symbol: BTCUSDT | Qty: 0.01
+2026-05-23 10:17:42 | INFO     | orders | Order placed successfully | OrderId: 13180255926 | Status: NEW | ExecutedQty: 0.0000
+2026-05-23 10:18:16 | INFO     | orders | Placing LIMIT SELL order | Symbol: BTCUSDT | Qty: 0.01 | Price: 68000.0
+2026-05-23 10:18:16 | ERROR    | client | API Error -4024: Limit price can't be lower than 71710.75.
+2026-05-23 10:18:16 | ERROR    | cli | Order Failed: API Error -4024: Limit price can't be lower than 71710.75.
+2026-05-23 10:18:33 | INFO     | orders | Placing LIMIT SELL order | Symbol: BTCUSDT | Qty: 0.01 | Price: 72000.0
+2026-05-23 10:18:34 | INFO     | orders | Order placed successfully | OrderId: 13180259369 | Status: NEW | ExecutedQty: 0.0000
